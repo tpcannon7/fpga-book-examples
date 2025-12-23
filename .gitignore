@@ -1,1 +1,6 @@
-.vcd
+#icarus verilog output files
+
+*
+!*/
+!*.sv*
+!.gitignore

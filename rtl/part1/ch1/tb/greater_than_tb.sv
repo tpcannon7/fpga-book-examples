@@ -20,8 +20,8 @@ module greater_than_tb ();
   initial begin
     $dumpfile("greater_than.vcd");
     $dumpvars();
-    for (i = 0; i < NUM_BITS; i++) begin
-      for (j = 0; j < NUM_BITS; j++) begin
+    for (i = 0; i < NUM_BITS ** 2; i++) begin
+      for (j = 0; j < NUM_BITS ** 2; j++) begin
         a = i;
         b = j;
         #10;
