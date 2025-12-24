@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module parameterized_barrel_shifter #(
     parameter N = 4
 ) (
@@ -6,8 +8,9 @@ module parameterized_barrel_shifter #(
     output logic [(2**N)-1:0] out
 );
 
-  localparam NUM_BITS = 2 ** N;
+  // only shifts left
 
+  localparam NUM_BITS = 2 ** N;
 
   logic [NUM_BITS-1:0] stage[0:N];
   genvar i;
