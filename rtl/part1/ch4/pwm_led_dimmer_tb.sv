@@ -20,7 +20,7 @@ module pwm_led_dimmer_tb ();
   end
 
   initial begin
-    $dumpfile("pwm.vcd");
+    $dumpfile("dump.vcd");
     $dumpvars(0, pwm_led_dimmer_tb);
 
     rst = 1'b1;
