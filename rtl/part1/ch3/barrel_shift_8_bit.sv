@@ -9,7 +9,7 @@ module barrel_shift_8_bit (
   logic [7:0] shift_right;
   logic [7:0] shift_left;
 
-  always @(*) begin
+  always_comb begin
     // right shift circuit
     case (sha)
       3'b000:  shift_right = in;

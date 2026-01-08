@@ -11,7 +11,7 @@ module dual_priority_encoder (
   logic [3:0] temp1;
   logic [3:0] temp2;
 
-  always @* begin
+  always_comb begin
     temp1 = 4'bxxxx;
     temp2 = 4'bxxxx;
     for (int i = 0; i < INPUT_BITS; i++) begin

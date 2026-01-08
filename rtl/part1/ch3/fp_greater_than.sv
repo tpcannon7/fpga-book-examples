@@ -11,7 +11,7 @@ module fp_greater_than (
   logic [7:0] mant1, mant2;
 
 
-  always @* begin
+  always_comb begin
     sign1 = fp1[12];
     sign2 = fp2[12];
 

@@ -12,7 +12,7 @@ module bcd_inc (
   logic overflow_bottom;
   logic overflow_middle;
 
-  always @* begin
+  always_comb begin
     bottom = bcd[3:0];
     middle = bcd[7:4];
     top = bcd[11:8];

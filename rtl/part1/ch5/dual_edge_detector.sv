@@ -21,7 +21,7 @@ module dual_edge_detector (
     end
   end
 
-  always @(*) begin
+  always_comb begin
     next_state = current_state;
     out = 1'b0;
     case (current_state)

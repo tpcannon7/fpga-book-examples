@@ -22,7 +22,7 @@ module pwm_led_dimmer (
     end
   end
 
-  always @* begin
+  always_comb begin
     if (count_reg < w) begin
       count_next = count_reg + 1;
       pwm_next   = 1;

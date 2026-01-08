@@ -10,7 +10,7 @@ module int_fp_conversion (
   logic [7:0] magnitude;
   logic [2:0] norm_pos;
 
-  always @* begin
+  always_comb begin
     sign = signed_int[7];
 
     if (sign) begin
